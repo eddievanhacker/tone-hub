@@ -1,2 +1,2 @@
 # tone-hub
-E-commerce para curso de React de Coderhouse
+E-commerce para curso de React de Coderhouse.
