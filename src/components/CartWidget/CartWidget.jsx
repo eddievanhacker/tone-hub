@@ -1,4 +1,3 @@
-import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer';
 import './CartWidget.css';
 
 const CartWidget = () => {

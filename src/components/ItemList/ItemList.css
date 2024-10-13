@@ -1,5 +1,7 @@
-.ItemList {
-    width: auto;
+.ListGroup {
+    padding: 5% 0;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;

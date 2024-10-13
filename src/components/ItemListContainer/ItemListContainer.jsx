@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './ItemListContainer.css';
-import '../../App.css';
-import logo from '../../assets/guitar.png';
+import ItemList from '../ItemList/ItemList'
+import { getProducts } from '../../asyncMock'
 
 const ItemListContainer = ({ mensaje, parrafo }) => {
-    return (
-      <div className='App'>
-        <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+    const [products, setProducts] = useState([])
 
-        <h1>HOLA!</h1>
+    useEffect(() => {
+      getProducts()
+        .then(response => {
+          setProducts(response)
+        })
+        .catch(error => {
+          console.error(error)
+        })
+    })
+  
+  
+  return (
+      <div className='App'>
+        <ItemList products={products} />
 
       </div>
     );

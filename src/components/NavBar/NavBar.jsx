@@ -7,6 +7,9 @@ const NavBar = () => {
             <h2>
                 <CartWidget />
             </h2>
+
+            <button>Home</button>
+            <button>Ítems</button>
         </div>
     )
 }
