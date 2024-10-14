@@ -1,13 +1,25 @@
 .NavBar-app {
     position: fixed;
+    max-height: 100px;
     width: 100vw;
     z-index: 1;
-    height: 70px;
     color: aliceblue;
     background-color: black;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
+    align-items: center;
     margin-top: -20px;
+    .Button {
+        color: white;
+        background-color: darkblue;
+        height: 40px;
+        width: 100px;
+        max-width: 120px;
+        margin: 0 10px;
+    }
+    img {
+        min-height: 30px;
+        max-height: 50px;
+    }
 }

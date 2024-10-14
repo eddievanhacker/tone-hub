@@ -1,5 +1,6 @@
 .CardItem {
     height: auto;
+    max-width: 600px;
     border: 1px solid transparent;
     box-shadow: 2px 3px 7px;
     border-radius: 10px;
@@ -12,5 +13,13 @@
     .ItemImg {
         height:250px;
         max-width: 300px;
+    }
+    .Button {
+        color: white;
+        background-color: darkblue;
+        height: 40px;
+        width: fit-content;
+        min-width: 50px;
+        margin: 0 10px;
     }
 }
