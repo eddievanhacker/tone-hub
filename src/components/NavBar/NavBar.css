@@ -1,25 +1,41 @@
 .NavBar-app {
     position: fixed;
-    max-height: 100px;
+    max-height: 120px;
     width: 100vw;
     z-index: 1;
     color: aliceblue;
     background-color: black;
+    margin-top: -20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
     align-items: center;
-    margin-top: -20px;
-    .Button {
-        color: white;
-        background-color: darkblue;
-        height: 40px;
-        width: 100px;
-        max-width: 120px;
-        margin: 0 10px;
-    }
+        h3 {
+            color: red;
+            text-decoration: none;
+            padding: 0;
+            margin: 10px;
+        }
+        .Option {
+            color: black;
+            background-color: bisque;
+            text-decoration: none;
+            min-height: 50px;
+            min-width: 85px;
+            max-width: 120px;
+            margin: 0 3px;
+            padding: 5px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: color 0.5s ease, background-color 0.5s ease;
+        }
+        .Option:hover {
+            color: white;
+            background-color: red;
+        }
     img {
         min-height: 30px;
-        max-height: 50px;
+        max-height: 40px;
+        margin: 5px;
     }
 }

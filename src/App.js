@@ -11,18 +11,16 @@ function App() {
   return (
     <div className="App">
 
+      <BrowserRouter>
       <NavBar />
       <CartWidget />
-      <BrowserRouter>
       <Routes>
         <Route path="/" element={<ItemListContainer />} />
-        <Route path="/item" element={<ItemDetailContainer />} />
+        <Route path="/category/:categoryId" element={<ItemListContainer />} />
+        <Route path="/item/:itemId" element={<ItemDetailContainer />} />
         <Route path="*" element={<h1>404 ups!</h1>} />
       </Routes>
       </BrowserRouter>
-
-      <ItemDetailContainer />
-      
       <Footer />
 
     </div>
