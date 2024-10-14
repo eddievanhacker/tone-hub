@@ -1,9 +1,11 @@
 .ListGroup {
     padding: 5% 0;
-    width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    margin: 0;
     justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
