@@ -6,6 +6,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer.
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import CartWidget from './components/CartWidget/CartWidget.jsx';
+import ItemCount from './components/ItemCount/ItemCount.jsx'
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
         <Route path="*" element={<h1>404 ups!</h1>} />
       </Routes>
       </BrowserRouter>
+      
+      <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log('Cantidad agregada ',quantity)} />
+
+      <ItemDetailContainer />
       
       <Footer />
 

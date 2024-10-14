@@ -2,11 +2,11 @@ const products = [
     {
         id: '1',
         name: 'Guitarra Gretsch Country Gendleman',
-        price: 1200,
+        price: 3900,
         category: 'gretsch',
         img: 'https://www.fmicassets.com/Damroot/GretschVert/10001/2401248892_gre_ins_frt_01_rr.png',
         stock: 5,
-        description: 'Descripción de la guitarra Gretsch Country Gendleman'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit, diam ac fringilla ullamcorper, turpis dui venenatis erat, eget facilisis risus leo a augue. Cras turpis ligula, eleifend posuere eros a, viverra lacinia magna. Phasellus convallis velit non varius luctus. Nulla elementum nunc quam, vitae bibendum diam iaculis id. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas non imperdiet diam, quis dignissim ante. Curabitur venenatis, odio nec tristique ultricies, ex nulla efficitur orci, ultricies ultricies lacus libero at risus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
     },
     {
         id: '2',
@@ -18,7 +18,7 @@ const products = [
         description: 'Descripción de la guitarra Gibson Les Paul Lucy'
     },
     {
-        id: '2',
+        id: '3',
         name: 'Guitarra Rickenbacker Fireglo 12 cuerdas',
         price: 4500,
         category: 'rickenbacker',
@@ -32,6 +32,14 @@ export const getProducts = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products)
+        }, 500)
+    })
+}
+
+export const getProductById = (productId) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products.find(prod => prod.id === productId))
         }, 500)
     })
 }

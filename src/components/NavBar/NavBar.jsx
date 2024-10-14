@@ -8,8 +8,8 @@ const NavBar = () => {
                 <CartWidget />
             </h2>
 
-            <button>Home</button>
-            <button>Ítems</button>
+            {/* <button>Home</button>
+            <button>Ítems</button> */}
         </div>
     )
 }

@@ -1,6 +1,7 @@
-import './Item.css'
+import './ItemDetail.css'
+import ItemCount from '../ItemCount/ItemCount'
 
-const Item = ({id, name, img, price, stock}) => {
+const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
     return (
         <article className='CardItem'>
             <header className='Header'>
@@ -13,17 +14,17 @@ const Item = ({id, name, img, price, stock}) => {
             </picture>
             <section>
                 <p className='Info'>
-                    Precio: USD${price}
+                    Categoría: {category}
                 </p>
                 <p className='Info'>
-                    Stock disponible: {stock}
+                    Descripción: {description}
+                </p>
+                <p className='Info'>
+                    Precio: ${price}
                 </p>
             </section>
-            <footer className='ItemFooter'>
-                <button className='Option'>Ver detalle</button>
-            </footer>
         </article>
     )
 }
 
-export default Item
+export default ItemDetail
