@@ -19,10 +19,10 @@ const products = [
     },
     {
         id: '3',
-        name: 'Guitarra Rickenbacker 360 J-L 6 cuerdas',
+        name: 'Guitarra Rickenbacker 360 Fireglo 6 cuerdas',
         price: 4500,
         category: 'rickenbacker',
-        img: 'https://www.global-audio-store.fr/81675-large/rickenbacker-360-jg.jpg',
+        img: 'https://media.sweetwater.com/m/products/image/f61fb64e7abQRUXRveEQJILoiE39R2HpGwJvg8oR.wm-lh.png?quality=82&height=750&ha=f61fb64e7a0bcd1c',
         stock: 1,
         description: 'Phasellus ac mattis augue. Cras placerat a lectus at pharetra. Nullam commodo, urna in lobortis hendrerit, felis odio molestie mauris, eu aliquet sem tortor in diam. Nulla sapien justo, vehicula sit amet turpis in, accumsan sodales ante. Suspendisse cursus, massa id mattis sodales, nisi sapien sodales lorem, non consequat velit risus in libero. Cras leo ante, sagittis sed nisl et, posuere scelerisque elit. Etiam egestas tortor in mi pretium laoreet. Nullam at est at est finibus consequat sit amet eget ante. Sed id feugiat nunc, sit amet fringilla velit. Aliquam vitae laoreet ipsum, non fermentum nisl. Fusce cursus ante nunc, ac suscipit lorem imperdiet vitae. Nulla finibus nibh ipsum, ut placerat arcu iaculis nec. Morbi condimentum sollicitudin nibh vitae bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent gravida suscipit orci sit amet fermentum. Mauris porttitor, purus eget auctor aliquam, dui orci tincidunt libero, in vestibulum sem dolor in justo.'
     },
