@@ -10,8 +10,6 @@ const ItemList = ({ products }) => {
     )
 }
 
-export default ItemList
-
 
 // import { collection, getDocs } from 'firebase/firestore';
 // import './ItemList.css';
@@ -21,7 +19,7 @@ export default ItemList
 // const ItemList = () => {
 //     const [items, setItems] = useState([]);
 //     useEffect(() => {
-//         const collectionRef = collection(db,"Aj8zVaq3SsgTj5zdFrDj");
+//         const collectionRef = collection(db,"products");
 //     getDocs(collectionRef).then(snaps => {
 //         const { docs } = snaps;
 //         const list = docs.map(doc => ({ ...doc.data(), id: doc.id }));
@@ -46,4 +44,4 @@ export default ItemList
 //     );
 // };
 
-// export default ItemList;
+export default ItemList;

@@ -1,11 +1,11 @@
 .NavBar-app {
     position: fixed;
-    max-height: 120px;
+    height: 120px;
     width: 100vw;
     z-index: 1;
     color: aliceblue;
     background-color: black;
-    margin-top: -20px;
+    margin-top: -30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;

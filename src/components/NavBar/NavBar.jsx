@@ -1,5 +1,5 @@
 import './NavBar.css';
-// import CartWidget from '../CartWidget/CartWidget';
+import CartWidget from '../CartWidget/CartWidget';
 import { NavLink, Link } from 'react-router-dom';
 
 const NavBar = () => {
@@ -15,7 +15,7 @@ const NavBar = () => {
                 <NavLink to={'/category/hammond'} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Hammond</NavLink>
             </div>
             <div>
-                <img src="https://www.svgrepo.com/show/94662/shopping-cart.svg" alt="Cart" />
+                <CartWidget />
             </div>
         </nav>
     )
